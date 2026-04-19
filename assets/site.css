@@ -344,7 +344,8 @@ section.loose { padding: 160px 0; }
     padding-top: 18px; padding-bottom: 18px;
     border-bottom-color: transparent !important;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: center;
+    justify-content: center;
   }
   .nav.menu-open .nav-links {
     display: flex;
@@ -353,8 +354,6 @@ section.loose { padding: 160px 0; }
     gap: 24px;
     font-size: 20px;
     width: 100%;
-    order: 3;
-    margin-top: 40px;
   }
   .nav.menu-open .nav-links a { color: rgba(255,255,255,0.85); }
   .nav.menu-open .nav-links a:hover { color: #fff; }
