@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 204" role="img" aria-labelledby="t d">
+  <title id="t">MECC emblem</title>
+  <desc id="d">MECC nested-frame emblem mark in navy and gold, for favicons and avatars.</desc>
+  <defs>
+    <linearGradient id="navyM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1628"/><stop offset="1" stop-color="#1A2C44"/>
+    </linearGradient>
+    <linearGradient id="goldM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D7B36D"/><stop offset="1" stop-color="#B0863F"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(12,12)">
+    <rect x="0" y="0" width="180" height="180" fill="none" stroke="url(#navyM)" stroke-width="16"/>
+    <rect x="38" y="38" width="104" height="104" fill="none" stroke="url(#goldM)" stroke-width="14"/>
+    <rect x="63" y="67" width="54" height="14" fill="url(#goldM)"/>
+    <rect x="63" y="99" width="54" height="14" fill="url(#goldM)"/>
+  </g>
+</svg>

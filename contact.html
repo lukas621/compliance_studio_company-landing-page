@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Request a Conversation — Compliance Studio</title>
+<title>Contact — MECC</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&family=Libre+Caslon+Display&display=swap" rel="stylesheet" />
@@ -12,16 +12,16 @@
 <body class="bg-dark">
 
 <nav class="nav" aria-label="Primary">
-  <a href="index.html" class="nav-brand"><span class="nav-mark"></span>Compliance Studio</a>
+  <a href="index.html" class="nav-brand"><img src="assets/mecc_logo_horizontal_dark.svg" alt="MECC" class="nav-logo nav-logo-dark" /><img src="assets/mecc_logo_horizontal_light.svg" alt="MECC" class="nav-logo nav-logo-light" /></a>
   <div class="nav-links">
-    <a href="program.html">The Program</a>
-    <a href="pathway.html">The Pathway</a>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="approach.html">Approach</a>
     <a href="evidence.html">Evidence</a>
-    <a href="executives.html">For Executives</a>
     <a href="about.html">About</a>
-    <a href="accessibility.html">Accessibility</a>
   </div>
-  <a href="contact.html" class="nav-cta active">Request a Conversation</a>
+  <a href="contact.html" class="nav-cta active">Contact</a>
   <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -31,26 +31,25 @@
   <div class="container">
     <div class="contact-grid">
       <div class="contact-left">
-        <span class="eyebrow" style="color:var(--gold)">N° 07 · Begin</span>
+        <span class="eyebrow" style="color:var(--gold)">Contact</span>
         <h1 class="display-l" style="color:#fff;margin-top:24px;max-width:16ch;text-wrap:balance">Request a <em style="color:var(--gold);font-style:italic">diagnostic conversation</em>.</h1>
-        <p class="lede" style="margin-top:28px">Every first conversation is led personally by Jacqueline Silvera, our founding senior partner. Not a sales team. A working session about your institution's capability posture and the shape of the next engagement.</p>
+        <p class="lede" style="margin-top:28px;color:#cfd5e1">Every first conversation is a working session about your institution's capability posture and the shape of the next engagement. Not a sales call. A diagnostic.</p>
 
         <div class="sig">
-          <div class="sig-row">
-            <div><span class="mono">Led by</span><div class="serif sig-big">Jacqueline Silvera</div><div style="color:var(--muted-on-dark);font-size:13px">Founding Senior Partner</div></div>
-          </div>
           <div class="sig-row">
             <div><span class="mono">Format</span><div style="color:#fff;font-size:16px">30 minutes · video · no deck</div></div>
             <div><span class="mono">Response</span><div style="color:#fff;font-size:16px">Within 48 hours · proposed agenda attached</div></div>
           </div>
           <div class="sig-row">
-            <div><span class="mono">Direct</span><a href="mailto:partners@compliancestudio.ca" style="color:var(--gold);font-size:16px">partners@compliancestudio.ca</a></div>
+            <div><span class="mono">Direct</span><a href="mailto:info@m-ecc.com" style="color:var(--gold);font-size:16px">info@m-ecc.com</a></div>
           </div>
         </div>
       </div>
 
       <div class="contact-right">
-        <form class="contact-form" onsubmit="return handleSubmit(event)">
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="MECC — New contact request" />
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="ff">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
@@ -69,15 +68,15 @@
           </div>
           <div class="ff">
             <label for="msg">What is the capability challenge you are facing?</label>
-            <textarea id="msg" name="msg" rows="5" required placeholder="A paragraph is enough. Specifics help."></textarea>
+            <textarea id="msg" name="message" rows="5" required placeholder="A paragraph is enough. Specifics help."></textarea>
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send · Response within 48 hours <span class="arrow"></span></button>
-          <p class="mono" style="margin-top:18px;color:var(--muted-on-dark);font-size:10.5px">This form submits over TLS 1.3. Data stored in AWS ca-central-1. Retained for 90 days unless you become a customer. No tracking, no newsletter enrolment, no third-party enrichment.</p>
+          <p class="mono" style="margin-top:18px;color:var(--muted-on-dark);font-size:10.5px">Submissions delivered to info@m-ecc.com via Formspree. No tracking, no newsletter enrolment, no third-party enrichment.</p>
         </form>
 
         <div class="sent" id="sent" aria-hidden="true">
           <div class="serif" style="color:var(--gold);font-size:40px;line-height:1.1">Received.</div>
-          <p style="color:#cfd5e1;font-size:16px;margin-top:16px">Jacqueline Silvera will respond within 48 hours with a proposed agenda for our first conversation. If your message crossed a weekend, on Monday.</p>
+          <p style="color:#cfd5e1;font-size:16px;margin-top:16px">MECC will respond within 48 hours with a proposed agenda for our first conversation. If your message crossed a weekend, on Monday.</p>
         </div>
       </div>
     </div>
@@ -87,7 +86,7 @@
 <footer class="footer" style="padding-top:64px">
   <div class="container">
     <div class="footer-legal" style="margin-top:0;border-top:0;padding-top:0">
-      <div>© 2026 Compliance Studio Inc. · Toronto, Ontario, Canada</div>
+      <div>© 2026 Modernized Equity Compliance Consulting Inc. · Toronto, Ontario, Canada</div>
       <div><a href="accessibility.html" style="display:inline-block;margin-right:18px">Accessibility</a><a href="#" style="display:inline-block;margin-right:18px">Privacy</a><a href="#" style="display:inline-block">Terms</a></div>
     </div>
   </div>
@@ -103,7 +102,6 @@ body.bg-dark { background: var(--navy); color: #e8ecf3; }
 .sig-row { display: flex; gap: 48px; flex-wrap: wrap; }
 .sig-row > div { display: flex; flex-direction: column; gap: 6px; }
 .sig .mono { color: var(--gold); font-size: 10.5px; }
-.sig-big { color: #fff; font-size: 28px; letter-spacing: -0.01em; }
 
 .contact-form { background: var(--navy-2); border: 1px solid var(--rule); padding: 48px; }
 .ff { margin-bottom: 24px; }
@@ -131,13 +129,30 @@ body.bg-dark { background: var(--navy); color: #e8ecf3; }
 </style>
 <script src="assets/site.js"></script>
 <script>
-function handleSubmit(e) {
+document.getElementById('contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
-  const form = e.target;
-  form.classList.add('hidden');
-  document.getElementById('sent').classList.add('on');
-  return false;
-}
+  var form = e.target;
+  var btn = form.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(function(res) {
+    if (res.ok) {
+      form.classList.add('hidden');
+      document.getElementById('sent').classList.add('on');
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'Something went wrong — please try again';
+    }
+  }).catch(function() {
+    btn.disabled = false;
+    btn.textContent = 'Connection error — please try again';
+  });
+});
 </script>
 </body>
 </html>

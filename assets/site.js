@@ -1,4 +1,4 @@
-// Compliance Studio — shared site behavior
+// MECC — shared site behavior
 
 // Nav scroll state
 (function initNav() {

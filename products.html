@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Products — MECC</title>
+<meta name="description" content="Two products from MECC — the Training Bot (a RAG assistant for compliance training content) and the Compliance Poster App." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&family=Libre+Caslon+Display&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <a href="index.html" class="nav-brand"><img src="assets/mecc_logo_horizontal_dark.svg" alt="MECC" class="nav-logo nav-logo-dark" /><img src="assets/mecc_logo_horizontal_light.svg" alt="MECC" class="nav-logo nav-logo-light" /></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="approach.html">Approach</a>
+    <a href="evidence.html">Evidence</a>
+    <a href="about.html">About</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Contact</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero" data-screen-label="Products / Hero">
+  <div class="container">
+    <span class="eyebrow">Products</span>
+    <h1 class="display-xl" style="margin-top:28px;max-width:16ch;color:#fff">Tools that <em style="color:var(--gold);font-style:italic">extend</em> the training.</h1>
+    <p class="lede" style="margin-top:32px">Two products that complement MECC's training programmes — a content-generation assistant built on our own training library, and a managed compliance poster system for Canadian healthcare institutions.</p>
+  </div>
+</section>
+
+<!-- ★ FLAGSHIP — TRAINING BOT -->
+<section class="dark bot-flagship" data-screen-label="Products / Training Bot">
+  <div class="container">
+    <div class="bot-intro reveal">
+      <span class="gold-rule" style="width:48px;height:3px;margin-bottom:24px"></span>
+      <span class="section-label" style="color:var(--gold)">Flagship product</span>
+      <h2 class="display-xl" style="color:#fff;margin-top:24px;max-width:14ch">Training Bot</h2>
+      <p class="lede" style="margin-top:28px;max-width:52ch">A retrieval-augmented generation assistant that draws from MECC's curated, SME-validated training library — not the open internet. It generates content grounded in evidence. Every output is cited, scoped, and flagged for human review before it reaches a learner.</p>
+    </div>
+
+    <div class="bot-grid reveal">
+      <!-- WHAT IT DOES -->
+      <div class="bot-panel">
+        <h3 class="bot-panel-head">What it generates</h3>
+        <div class="bot-capability">
+          <h4>Scenario-based training exercises</h4>
+          <p>Branching clinical scenarios grounded in your institution's policy documents. The bot drafts; a clinical SME validates. The institution gets exercises that reflect its own obligations, not a generic catalogue.</p>
+        </div>
+        <div class="bot-capability">
+          <h4>Performance-support tools</h4>
+          <p>Quick-reference guides, decision aids, checklists, and pocket cards — generated from the same knowledge base that powers the training modules. Formatted for print and mobile.</p>
+        </div>
+        <div class="bot-capability">
+          <h4>Facilitator discussion prompts</h4>
+          <p>Case studies and debrief frames for in-service sessions. Tailored to the training area, the role pathway, and the institution's policy context.</p>
+        </div>
+        <div class="bot-capability">
+          <h4>Assessment items</h4>
+          <p>Decision-point items mapped to competency frameworks. Not multiple-choice trivia — items that test whether the clinician can apply the obligation on shift.</p>
+        </div>
+        <div class="bot-capability">
+          <h4>Plain-language policy summaries</h4>
+          <p>Grade-eight readability summaries of institutional policy for frontline staff. Generated from the source document, not paraphrased from a generic template.</p>
+        </div>
+      </div>
+
+      <!-- HOW IT WORKS -->
+      <div class="bot-panel">
+        <h3 class="bot-panel-head">How it works</h3>
+        <div class="bot-arch">
+          <div class="bot-arch-step">
+            <span class="bot-step-label">Curated knowledge base</span>
+            <p>MECC's in-house training content, SME-validated scenarios, regulatory references, and institutional policy documents. Not the open internet. Not a general-purpose model.</p>
+          </div>
+          <div class="bot-arch-step">
+            <span class="bot-step-label">Retrieval-augmented generation</span>
+            <p>Every response is grounded in retrieved source material from the knowledge base. The model generates from evidence, not from parametric memory. Citations are included in every output.</p>
+          </div>
+          <div class="bot-arch-step">
+            <span class="bot-step-label">Human-in-the-loop validation</span>
+            <p>Every output is reviewed by a named clinical SME before it reaches a learner. The bot accelerates drafting. It does not replace the expert who validates it. No content is published without a named reviewer.</p>
+          </div>
+          <div class="bot-arch-step">
+            <span class="bot-step-label">Institutional scoping</span>
+            <p>Outputs are scoped to the institution's own policy documents and regulatory context. The bot does not generate content outside its validated knowledge base, and it does not store or process patient data.</p>
+          </div>
+        </div>
+
+        <div class="bot-guardrails">
+          <h4 class="bot-guardrails-head">Guardrails</h4>
+          <div class="bot-guardrail-row">No generation outside the validated knowledge base</div>
+          <div class="bot-guardrail-row">Every output grounded in retrieved source material with citations</div>
+          <div class="bot-guardrail-row">Every output reviewed by a named clinical SME before publication</div>
+          <div class="bot-guardrail-row">No patient data ingested, stored, or processed</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bot-cta reveal" style="margin-top:80px;text-align:center">
+      <a href="contact.html" class="btn btn-primary btn-lg">Request a Training Bot demo <span class="arrow"></span></a>
+      <p style="margin-top:16px;color:var(--muted-on-dark);font-size:14px">Currently in development · early-access partnerships available.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE POSTER APP -->
+<section class="bg-paper2" data-screen-label="Products / Posters">
+  <div class="container">
+    <div class="section-head">
+      <span class="gold-rule"></span><span class="section-label">Available now</span>
+    </div>
+    <div class="grid-2" style="align-items:start;gap:80px">
+      <div class="reveal">
+        <h2 class="display-l" style="max-width:18ch;text-wrap:balance">Compliance Poster App</h2>
+        <p class="body-large" style="margin-top:24px">A managed, co-branded library of compliance posters — workplace rights, health and safety, AODA and accessibility obligations, and regulatory notices — kept current with legislative change. Your institution's logo, seal, and colour palette on every poster.</p>
+        <p class="body-large">Delivered as high-resolution print PDFs and digital formats for your institution's existing displays and intranet. Software only — no hardware required. A coverage dashboard shows which locations have current posters deployed and which need updates.</p>
+        <a href="contact.html" class="btn btn-ink" style="margin-top:32px">Request the Poster App <span class="arrow"></span></a>
+      </div>
+      <div class="reveal">
+        <div class="product-features">
+          <div class="product-feature">
+            <div class="mono" style="color:var(--accent)">Legislative tracking</div>
+            <p>Poster content updated when regulations change. No manual monitoring required.</p>
+          </div>
+          <div class="product-feature">
+            <div class="mono" style="color:var(--accent)">Co-branded</div>
+            <p>Your institution's logo, seal, and colour palette applied to every poster.</p>
+          </div>
+          <div class="product-feature">
+            <div class="mono" style="color:var(--accent)">Print &amp; digital formats</div>
+            <p>High-resolution PDF for print. Optimized formats for digital display boards and intranet.</p>
+          </div>
+          <div class="product-feature">
+            <div class="mono" style="color:var(--accent)">Coverage dashboard</div>
+            <p>See which locations have current posters deployed and which need updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="bg-paper" data-screen-label="Products / CTA">
+  <div class="container" style="text-align:center">
+    <h2 class="display-l" style="max-width:24ch;margin:0 auto 20px">Interested in our products?</h2>
+    <p class="lede" style="margin:0 auto 40px;text-align:center">Available standalone or bundled with MECC training programmes. Tell us what your institution needs.</p>
+    <a href="contact.html" class="btn btn-primary btn-lg">Request a Conversation <span class="arrow"></span></a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="footer-brand"><img src="assets/mecc_logo_horizontal_dark.svg" alt="MECC" class="footer-logo" /></div>
+        <div class="footer-tag">Compliance training for Canadian healthcare.</div>
+        <p style="margin-top:28px;max-width:38ch;color:var(--muted-on-dark);font-size:13px;line-height:1.6">Toronto, Canada.</p>
+        <div style="margin-top:24px" class="wcag-badge"><span class="dot"></span>WCAG 2.2 AA Conformant</div>
+      </div>
+      <div>
+        <p class="footer-heading">Services</p>
+        <a href="services.html">Training areas</a>
+        <a href="approach.html">Our approach</a>
+        <a href="evidence.html">Evidence</a>
+      </div>
+      <div>
+        <p class="footer-heading">Products</p>
+        <a href="products.html">Apps &amp; tools</a>
+        <a href="contact.html">Request a conversation</a>
+      </div>
+      <div>
+        <p class="footer-heading">Company</p>
+        <a href="about.html">About</a>
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div>© 2026 Modernized Equity Compliance Consulting Inc. · Toronto, Ontario, Canada</div>
+      <div>
+        <a href="accessibility.html" style="display:inline-block;margin-right:18px">Accessibility Statement</a>
+        <a href="#" style="display:inline-block;margin-right:18px">Privacy (PIPEDA/PHIPA)</a>
+        <a href="#" style="display:inline-block">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* ★ Training Bot flagship section */
+.bot-flagship { padding: 120px 0 80px; }
+
+.bot-intro { max-width: 680px; }
+
+.bot-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+  margin-top: 80px;
+}
+.bot-panel {
+  background: var(--navy-2);
+  border: 1px solid var(--rule);
+  padding: 48px;
+}
+.bot-panel-head {
+  font-family: var(--serif);
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.bot-capability { margin-bottom: 32px; }
+.bot-capability:last-child { margin-bottom: 0; }
+.bot-capability h4 {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.bot-capability p {
+  font-size: 15px; line-height: 1.55; color: #cfd5e1; margin: 0;
+}
+
+.bot-arch-step {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.bot-arch-step:last-child { border-bottom: 0; }
+.bot-step-label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.bot-arch-step p {
+  font-size: 15px; line-height: 1.55; color: #cfd5e1; margin: 0;
+}
+
+.bot-guardrails {
+  margin-top: 40px;
+  padding: 28px;
+  border: 1px solid var(--gold);
+  background: rgba(201,169,110,0.04);
+}
+.bot-guardrails-head {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+.bot-guardrail-row {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(201,169,110,0.15);
+  color: #cfd5e1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.bot-guardrail-row:last-child { border-bottom: 0; }
+
+/* Poster App */
+.product-features { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--rule-light); }
+.product-feature { padding: 32px; border-bottom: 1px solid var(--rule-light); border-right: 1px solid var(--rule-light); }
+.product-feature:nth-child(2n) { border-right: 0; }
+.product-feature .mono { display: block; font-size: 11px; letter-spacing: 0.14em; margin-bottom: 12px; }
+.product-feature p { font-size: 15px; line-height: 1.55; color: var(--ink-2); margin: 0; }
+
+.btn-lg { padding: 22px 32px; font-size: 16px; }
+
+@media (max-width: 980px) {
+  .bot-grid { grid-template-columns: 1fr; }
+  .bot-panel { padding: 32px; }
+  .product-features { grid-template-columns: 1fr; }
+  .product-feature { border-right: 0; }
+}
+</style>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

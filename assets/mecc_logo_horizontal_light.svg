@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 848 240" role="img" aria-labelledby="t d">
+  <title id="t">MECC</title>
+  <desc id="d">Compact MECC logo — emblem and wordmark, navy and gold, for light backgrounds and website navigation.</desc>
+  <defs>
+    <linearGradient id="navyH" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1628"/><stop offset="1" stop-color="#1A2C44"/>
+    </linearGradient>
+    <linearGradient id="goldH" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D7B36D"/><stop offset="1" stop-color="#B0863F"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(30,30)">
+    <rect x="0" y="0" width="180" height="180" fill="none" stroke="url(#navyH)" stroke-width="16"/>
+    <rect x="38" y="38" width="104" height="104" fill="none" stroke="url(#goldH)" stroke-width="14"/>
+    <rect x="63" y="67" width="54" height="14" fill="url(#goldH)"/>
+    <rect x="63" y="99" width="54" height="14" fill="url(#goldH)"/>
+    <line x1="248" y1="30" x2="248" y2="150" stroke="#0A1628" stroke-opacity="0.22" stroke-width="2"/>
+    <text x="312" y="140" font-family="Georgia,'Times New Roman',serif" font-size="150" fill="url(#navyH)" textLength="476" lengthAdjust="spacingAndGlyphs">MECC</text>
+  </g>
+</svg>
