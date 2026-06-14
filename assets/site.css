@@ -186,7 +186,6 @@ section.loose { padding: 160px 0; }
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
-.grid-12 { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
 
 /* Fade-in on scroll */
 .reveal { opacity: 0; transform: translateY(12px); transition: opacity 600ms ease, transform 600ms ease; }
@@ -243,11 +242,6 @@ section.loose { padding: 160px 0; }
   padding: 6px 10px;
 }
 
-/* Num dot */
-.num-dot {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--gold);
-}
-
 /* Page header block (non-home hero) */
 .page-hero {
   background: var(--navy);
@@ -287,44 +281,12 @@ section.loose { padding: 160px 0; }
 }
 .dark .chip { border-color: var(--rule); color: var(--muted-on-dark); }
 
-/* Product mock */
-.mock {
-  background: #0b1424; border: 1px solid var(--rule);
-  color: #d9deea;
-  padding: 28px;
-}
-.mock-header {
-  display: flex; justify-content: space-between; align-items: center;
-  padding-bottom: 16px; border-bottom: 1px solid var(--rule);
-  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted-on-dark);
-}
-.mock-title { font-family: var(--serif); font-size: 32px; color: #fff; letter-spacing: -0.01em; margin: 22px 0 14px; }
-.mock-body { font-size: 15px; line-height: 1.5; color: #b7bfd0; }
-.mock-choice {
-  display: grid; grid-template-columns: auto 1fr auto; gap: 14px;
-  padding: 14px 0; border-top: 1px solid var(--rule); align-items: center;
-  font-size: 14px; color: #d9deea;
-}
-.mock-choice .letter { font-family: var(--mono); color: var(--gold); font-size: 12px; }
-.mock-choice .meta { font-family: var(--mono); font-size: 10px; color: var(--muted-on-dark); letter-spacing: 0.14em; text-transform: uppercase; }
-
-/* Striped placeholder (for diagrams) */
-.striped {
-  background-image: repeating-linear-gradient(
-    -45deg,
-    rgba(201,169,110,0.12) 0, rgba(201,169,110,0.12) 1px,
-    transparent 1px, transparent 9px
-  );
-  border: 1px solid var(--rule);
-}
-
 /* Responsive */
 @media (max-width: 980px) {
   :root { --gutter: 24px; }
   .grid-2 { grid-template-columns: 1fr; gap: 48px; }
   .grid-3 { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: 1fr 1fr; }
-  .grid-12 { grid-template-columns: repeat(6, 1fr); }
   section { padding: 80px 0; }
   .page-hero { padding: 160px 0 80px; }
   .footer .row { grid-template-columns: 1fr 1fr; }
@@ -449,30 +411,8 @@ section.loose { padding: 160px 0; }
   .card:hover { transform: none; }
 }
 
-/* Tweak panel */
-.tweaks {
-  position: fixed; bottom: 20px; right: 20px; z-index: 100;
-  background: #0b1424; color: #e8ecf3;
-  border: 1px solid var(--rule);
-  padding: 18px;
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em;
-  min-width: 260px;
-  display: none;
-}
-.tweaks.on { display: block; }
-.tweaks h5 { margin: 0 0 12px; color: var(--gold); font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; }
-.tweaks .tweak-group { margin-bottom: 14px; }
-.tweaks .tweak-group:last-child { margin-bottom: 0; }
-.tweaks label { display: block; color: var(--muted-on-dark); margin-bottom: 8px; font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em; }
-.tweaks .swatches { display: flex; gap: 8px; }
-.tweaks .swatch {
-  width: 26px; height: 26px; border: 1px solid var(--rule); cursor: pointer; position: relative;
-}
-.tweaks .swatch.active { outline: 1px solid var(--gold); outline-offset: 2px; }
-.tweaks .opts { display: flex; flex-wrap: wrap; gap: 6px; }
-.tweaks .opt {
-  padding: 6px 9px; border: 1px solid var(--rule); color: #d9deea;
-  font-family: var(--mono); font-size: 10px; cursor: pointer;
-  letter-spacing: 0.1em;
-}
-.tweaks .opt.active { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+/* Dark body */
+body.bg-dark { background: var(--navy); }
+
+/* Large button */
+.btn-lg { padding: 22px 32px; font-size: 16px; }
